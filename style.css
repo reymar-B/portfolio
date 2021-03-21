@@ -236,7 +236,7 @@ body{
 }
 
 .image .btn-select{
-  position: absolute;
+  
   justify-content: space-around;
 }
 
@@ -247,7 +247,7 @@ body{
 
 .sub-content .image .display-right{
 
- 
+  position: absolute;
 
 }
 
