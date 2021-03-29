@@ -79,19 +79,22 @@ body{
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+
+    
   }
   .topnav{
     width: 100%;
     display: block;
+   
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
@@ -220,10 +223,17 @@ body{
   width: 70%;
   display: grid;
   grid-template-columns: 6fr 6fr;
-  grid-gap: 2rem ;
-  grid-auto-rows: minmax(8rem, auto);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10rem, auto);
   
   
+}
+
+@media screen and (min-width:1439px){
+  .portfolio .content{
+    grid-auto-rows: minmax( 10rem,30rem);
+   
+  }
 }
 
 /*IMAGE SLIDER ON PORTFOLIO ITEMS*/
@@ -231,48 +241,31 @@ body{
 
 .sub-content .image{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+ 
   
 }
+
 
 .image .btn-select{
-  
-  justify-content: space-around;
-}
-
-.sub-content .image .display-left{
-
+  display: flex;
+  justify-content: space-between;
   
 }
 
-.sub-content .image .display-right{
 
-  position: absolute;
-
+.image .btn-select button{
+  padding: 3%;  
 }
 
-/* 
-.portfolio .content .sub-content .image .mySlides{
+.image img{
   
+  width:100%;
+  height: 300px;
   display: none;
   background-size:contain;
   
-} */
-
-
-
-.portfolio .content .sub-content .image .mySlides2{
-  
-  display: none;
-  background-size:contain;
 }
-
-.portfolio .content .sub-content .image .mySlides3{
-  
-  display: none;
-  background-size:contain;
-}
-
 
 .portfolio .content .sub-content .description{
   
@@ -301,7 +294,7 @@ body{
 
 @media screen and (max-width: 780px) {
   .portfolio .content{
-    width: 90%;
+    width: 80%;
     grid-template-columns: 6fr;
     
   }
@@ -338,6 +331,18 @@ body{
   padding: 1%;
   
 }
+
+@media screen and (max-width: 768px){
+  .about-content{
+    width: 70%;
+   
+  }
+
+  #about h2{
+    padding-top: 50%;
+  }
+}
+ 
 
 
 .links a i{
@@ -377,11 +382,147 @@ body{
   margin: 10%;
 }
 
-.btn button{
-  padding: 3%;
-  background-color: rgb(47, 247, 47);
-  font-weight: bold;
+
+.btn a{
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  padding: 10px;
+  background-color: rgb(84, 245, 84);
   border: none;
   border-radius: 5px;
+
+  transition: all 100ms ease-in-out;
+}
+
+.btn a:hover{
+ background-color: rgb(9, 196, 9);
+ font-weight: bolder;
+}
+
+
+
+/* mr Resume */
+
+.resume-container{
+
+  min-height: 100vh;
+  display:flex;  
+  justify-content: center;
+ 
+}
+
+.resume-sub-container{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-auto-rows: minmax(10rem, auto);
+ 
   
+ 
+}
+
+@media screen and (max-width: 767px){
+  .resume-sub-container{
+    
+    width: 80%;
+    display: grid;
+    grid-template-columns: 6fr;
+    grid-gap: 10px;
+
+  }
+}
+
+
+
+
+.position{
+
+  text-align: center;
+  background-color: rgb(206, 236, 202);
+  
+}
+
+.position .image{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100%;
+  margin: 5%;
+ 
+}
+
+.position h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+}
+
+.position h3{
+  font-family:cursive;
+  font-size: 20px;
+  color: rgb(9, 85, 85);
+  margin: 2%;
+}
+
+.position p{
+  font-size: 15px;
+  margin: 2%;
+}
+
+
+
+
+.experience{
+  text-align: center;
+  background-color: rgb(90, 72, 248);
+  color: white;
+  padding-top: 10%;
+}
+
+.experience p{
+  font-size: 15px;
+  margin: 2%;
+}
+
+.experience textarea{
+  outline: none;
+  resize: none;
+  overflow: auto;
+  font-size: 10px;
+}
+
+
+.experience h3{
+  font-family:cursive;
+  font-size: 20px;
+  color: rgb(14, 2, 1);
+  margin: 2%;
+}
+
+
+.experience input{
+  padding: 5px;
+  margin: 1%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.experience .btn-return a{
+  text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5%;
+    background-color: white;
+
+    transition: all 100ms ease-in-out;
+}
+
+.experience .btn-return{
+    margin: 5%;
+}
+
+.experience .btn-return a:hover{
+  background-color: rgb(93, 218, 93);
+  font-weight: bolder;
 }
