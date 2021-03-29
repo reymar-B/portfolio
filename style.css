@@ -242,10 +242,22 @@ body{
 .sub-content .image{
   display: flex;
   flex-direction: column;
- 
+  position: relative;
   
 }
 
+
+
+button.display-left {
+    position: absolute;
+    bottom: 130px;
+}
+
+button.display-right {
+    position: absolute;
+    bottom: 130px;
+    right: 0;
+}
 
 .image .btn-select{
   display: flex;
