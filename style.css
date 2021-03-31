@@ -341,14 +341,14 @@ button.display-right {
 }
 
 .contact-container{
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
   
 
 }
 
 .contact-header h2{
-  padding: 5%;
+  padding-top: 5%;
   font-size:3rem;
   color: black;
   font-family: Pattaya;
@@ -364,7 +364,7 @@ button.display-right {
   padding: 10px;
   width: 20rem;
   outline: none;
-  margin: 10px;
+  margin: 5px;
   transition: all 200ms ease-out ;
 }
 
