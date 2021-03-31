@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Chango&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chango&family=Kiwi+Maru:wght@300&family=Pattaya&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/bbeed161a7.js" crossorigin="anonymous"></script>
 
     <title>my portfolio</title>
@@ -25,9 +32,9 @@
 
                 <div class="topnav" id="myTopnav">
 
-                    <a href="#home" class="active">Home</a>
-                    <a href="#myWork">my Work</a>
-                    <a href="#about">About</a>
+                    <a href="#home" class="active"> Home </a>
+                    <a href="#my-portfolio"> Portfolio </a>
+                    <a href="#contact"> Contact </a>
                    
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                       <div class="line">
@@ -47,25 +54,58 @@
 
 
         <div class="section" name="slide">
-        
+
+            <!-- HOME PAGE -->
+            
             <div id="home">
                 <div class="column">
-                    <div class="card">
-                        <h1> Hi I'm Rey....</h1>
-                        <br/> <h2> junior Web Developer </h2>
-                        
-                        
-                        
+                    
+                    <div class="intro">
+            
+                        <h1> hi! I'm Reymar Bongolto</h1>
+                       
                     </div>
+
+                    <div>
+                        <p>
+                            A <strong> web developer </strong> committed to learning and self-development 
+                        <br>
+                            aims to consistently achieved better results, energetic and eager to learn new skills.
+                        <br>
+                            always enthusiastic about my work and tasks at the same time
+                        <br>
+                            driven with a clear goal to succeed.
+                        
+                        </p>
+                    </div>
+
+                    <div class="skills">
+                        
+                        <i class="fab fa-html5" style="color: rgba(240, 75, 38, 0.898);" ></i>
+                        <i class="fab fa-css3-alt" style="color: rgb(12, 126, 192);" ></i>
+                        <i class="fab fa-js" style="color: rgb(194, 182, 14);" ></i>
+                        <i class="fab fa-php" style="color: rgb(148, 69, 223);" ></i>
+                        <i class="fab fa-laravel" style="color: rgb(240, 38, 38);" ></i>
+                        <i class="fa fa-git-square" aria-hidden="true"  style="color: rgb(240, 38, 38);" > </i>
+                    </div>
+
+                    <div class="links">
+                            
+                        <a href="https://ph.linkedin.com/in/reymar-bongolto-012489189?trk" target="blank"> <i class="fa fa-linkedin-square" style="color:  rgb(0, 0, 0);"> </i> </a>
+                        <a href="https://github.com/reymar-B" target="blank"> <i class="fa fa-github" style="color: rgb(0, 0, 0);"> </i> </a>
+                       
+                    </div>                    
+
                 </div>
                 
             </div>
 
+        <!-- PORTFOLIO PAGE -->
 
 
-        <div id="myWork">
+        <div id="my-portfolio">
 
-            <div class="pageHeader"> <h2> My Work </h2> </div>
+            <div class="pageHeader"> <h2> Portfolio </h2> </div>
 
             <div class="portfolio">
                 
@@ -77,7 +117,7 @@
                    
                         <div class="image"> 
                             
-                            <a href="#about">
+                            <a href=" # ">
                                 <img class="mySlides" src="img/img1.jpg" >
                                 <img class="mySlides" src="img/img2.jpg" >
                                 <img class="mySlides" src="img/img3.jpg" >
@@ -162,53 +202,77 @@
 
                
             </div>
-
-
+        
         </div>
 
-            <div id="about">
 
-                <div class="about-header"> 
-                    <h2> About me </h2> 
-                </div>
+            <!-- CONTACT PAGE -->
 
-               <div class="about-container" >
-                    <div class="about-content">
+            <div id="contact">
 
-                        <div class="my-name">
-                            <h3> I'm Reymar Bongolto</h3>
-                        </div>
+                <div class="contact-container" >
+
+                        <div class="contact-header"> 
                         
-                        <div class="about-me">
-                            <p>
-                                    A junior web developer committed to learning and self-development 
-                                <br>
-                                    aims to consistently achieved better results, energetic and eager to learn new skills.
-                                <br>
-                                    always enthusiastic about my work and tasks at the same time
-                                <br>
-                                    driven with a clear goal to succeed.
-                                
-                            </p>
-                        </div>
+                            <h2> Contact me </h2> 
                         
-                        <div class="links">
+                        </div>    
+                        
+                        <div class="c-form">
                             
-                            <a href="https://ph.linkedin.com/in/reymar-bongolto-012489189?trk" target="blank"> <i class="fa fa-linkedin-square" style="color:  rgb(85, 67, 245);"></i> </a>
-                            <a href="https://github.com/reymar-B" target="blank"> <i class="fa fa-github" style="color: rgb(236, 226, 226);"></i> </a>
-                           
-                        </div>
-                        <div class="btn">
-                            <a href="resume.html"> View Resume </a> 
-                        </div>
-                    </div>
-                    
+                            <form action="mailto:ramyer88@gmail.com" method="get" enctype="text/plain">
+                                
+                                <div>
+                                 
+                                    <input type="text" name="name" id="name" placeholder="Name:" required />
+                                    <p> Name </p>
 
-               </div>
-            </div>
-    
-        </div>
+                                </div>
+                        
+                                <div>
+                                 
+                                    <input type="text" name="email" id="email" placeholder="Email:" required />
+                                    <p> Email </p>
+                        
+                                </div>
+                        
+                                <div>
+                        
+                                    <textarea name="comments" placeholder="Message me" > </textarea>
+                                    <p> Message me </p>
+                                
+                                </div>
+                        
+                                <div>
+                        
+                                    <button type="submit" class="submit"> Submit </button>
+                    
+                                </div>
+                    
+                                <div>
+
+                                    <button type="reset" class="reset" >Reset</button>
+                    
+                                </div>
+
+                                <div>
+                                    
+                                    <a href=" # "> <i class="fa fa-download" aria-hidden="true"></i> resume </a>
+                    
+                                </div>
+                        
+                            </form>
+                        
+                        </div>
+                </div>
                 
+                
+                
+        
+            </div>
+                
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

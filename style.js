@@ -27,7 +27,7 @@ $('.topnav a').on('click', function(e){
 });
 //******************************************//
 
-//IMAGE SLIDER //
+// PORTFOLIO IMAGE SLIDER //
 
   var slideIndex = 1;
 showDivs(slideIndex);
