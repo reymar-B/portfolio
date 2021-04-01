@@ -96,9 +96,7 @@ body{
     display: block;
    
   }
-}
 
-@media screen and (max-width: 767px) {
   .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
@@ -111,7 +109,10 @@ body{
     text-align: left;
     
   }
+
 }
+
+
 
 
 /* Background Image */
@@ -127,15 +128,6 @@ body{
 
 
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20%;
-  }
-}
-
-
 
 
 /* Sections */
@@ -147,7 +139,18 @@ body{
   display: flex;
   justify-content: center;
   align-items: center; 
+}
 
+@media screen and (max-width: 767px){
+
+  #home{
+    padding-top: 20px;
+
+  }
+
+  #my-portfolio{
+    padding-top: 40px;
+  }
 }
 
 #home .column{
@@ -156,6 +159,8 @@ body{
   text-align: center;
   box-shadow: 5px  15px 20px rgb(32, 31, 31);
   border-radius: 5px;
+
+
 
   transition: all 150ms ease-in-out;
 }  
@@ -206,10 +211,8 @@ body{
   min-height: 100vh;
   display:flex;  
   justify-content: center;
-  
+ 
 }
-
-
 
 
 .portfolio .content{
@@ -332,7 +335,7 @@ button.display-right {
 
 #contact{
   min-height: 100vh;
-  width: 100%;
+  
 }
 
 #contact p{
@@ -343,6 +346,7 @@ button.display-right {
 .contact-container{
   margin-top: 5%;
   text-align: center;
+  
   
 
 }
@@ -362,7 +366,7 @@ button.display-right {
 .c-form input{
   font-size: 15px;
   padding: 10px;
-  width: 20rem;
+  width: 30%;
   outline: none;
   margin: 5px;
   transition: all 200ms ease-out ;
@@ -377,7 +381,7 @@ button.display-right {
 
 .c-form textarea{
 
-  width: 20rem;
+  width: 30%;
   padding: 10px;
   height: 5rem;
   font-size: 15px;
@@ -447,4 +451,49 @@ button.display-right {
   opacity: 50%;
   box-shadow: 5px 5px 15px white;
 
+}
+
+@media screen and (max-width: 768px){
+  
+.c-form input{
+  
+  width: 40%;
+ 
+  }
+
+  .c-form textarea{
+
+    width: 40%;
+
+  }
+
+  #contact{
+    padding-top: 10%;
+     
+   }
+
+   #my-portfolio{
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 425px){
+
+  .c-form input{
+  
+    width: 60%;
+   
+    }
+    .c-form textarea{
+
+      width: 60%;
+  
+    }
+    #contact{
+     padding-top: 15%;
+      
+    }
+    #my-portfolio{
+      padding-top: 15%;
+    }
 }
