@@ -231,7 +231,7 @@ h1, h2, h3{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(../img/light-bulb.jpg);
+    background-image: url(../img/light-bulbs-54.jpg);
     padding: 6rem 0;
 }
 #portf-head::before
@@ -247,6 +247,10 @@ h1, h2, h3{
 .portf-head h2
 {
     font-size: 2rem;
+}
+.portf-head p
+{
+    font-size: 20px;
 }
 @media screen and (min-width: 992px)
 {
@@ -312,15 +316,15 @@ h1, h2, h3{
 }
 .img01
 {
-    background-image: url(../img/light-00.jpg);
+    background-image: url(../img/contactlists.jpg);
 }
 .img02
 {
-    background-image: url(../img/light-bulb.jpg);
+    background-image: url(../img/parallax.png);
 }
 .img03
 {
-    background-image: url(../img/chittah.jpg);
+    background-image: url(../img/instaclone.png);
 }
 .links
 {
@@ -346,10 +350,10 @@ h1, h2, h3{
 .portf-desc
 {
     height: 100%;
-    text-align: center;
     display: flex;
     display: -webkit-flex;
     align-items: center;
+    justify-content: center;
 }
 .portf-desc p
 {
@@ -366,11 +370,11 @@ h1, h2, h3{
 .form-head
 {
     text-align: center;
-    line-height: 5rem;
     background-color: var(--light-dark);
 }
 .form-head h2
 {
+    line-height: 10rem;
     font-size: 2rem;
 }
 @media screen and (min-width: 992px)
@@ -473,6 +477,34 @@ h1, h2, h3{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 10%;
+}
+.socmed-icons i
+{
+    font-size: 2rem;
+    padding: 5px;
+    background-color: var(--light);
+    margin: 10px;
+    border-radius: 5px;
+}
+.resume
+{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+            
+
+}
+.resume a
+{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: var(--dark);
+    display: flex;
+    align-items: baseline;
+    padding: 5px 20px;
+    color: var(--light);
+    border-radius: 5px;
 }
 .ftr
 {
