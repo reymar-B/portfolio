@@ -398,7 +398,21 @@ h1, h2, h3{
     }
     .eml-form
     {
-        margin: 2%;
+        margin: 10% 15%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .contact-container
+    {
+        display: grid;
+        grid-template-columns: 6fr;
+        grid-gap: 1px;
+        grid-auto-rows: minmax(auto, auto);
+    }
+    .eml-form
+    {
+        margin: 10% 2%;
     }
 }
 .contact-form
