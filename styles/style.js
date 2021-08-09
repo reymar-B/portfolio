@@ -1,6 +1,7 @@
 jQuery(function(){
   smoothScroll();
   navbar();
+  sendEmail();
 })
 
 // Nav bar toggle
@@ -32,4 +33,30 @@ function smoothScroll()
             1200);
         }
     });
+}
+
+// Sending Email
+function sendEmail()
+{
+    $(document).on('click', '#submit', function(event){
+        event.preventDefault();
+        let name = $('#name').val();
+        let email = $('#email').val();
+        let message = $('#message').val();
+        $.ajax({
+            method:'POST',
+            url:'https://formsubmit.co/ajax/ramyer88@gmail.com',
+            dataType:'json',
+            accepts:'application/json',
+            data:{
+                name:name,
+                email:email,
+                message:message
+            },
+            success:function(){
+                alert('message sent');
+            },
+        })
+
+    })
 }

@@ -102,14 +102,14 @@
     <div class="form-head"> <h2> Contact </h2> </div>    
     <div class="contact-container" >
         <div class="contact-form">
-            <form class="eml-form" action="mailto:ramyer88@gmail.com" method="get" enctype="text/plain">
+            <form class="eml-form" action="test" method="POST">
                 <label for="name"> Name </label>
-                <input type="text" name="name" id="name" placeholder="Name:" required />
+                <input id="name" type="text" name="name" placeholder="Name:" required />
                 <label for="email"> Email </label>
-                <input type="text" name="email" id="email" placeholder="Email:" required />
+                <input id="email" type="email" name="email" placeholder="Email:" required />
                 <label for="message"> Message </label>
-                <textarea name="comments" placeholder="Message me" > </textarea>
-                <button type="submit" class="submit"> Send </button>
+                <textarea id="message" name="message"> </textarea>
+                <button id="submit" type="submit" class="submit"> Send </button>
                 <button type="reset" class="reset" >Cancel</button>
             </form>
         </div>
