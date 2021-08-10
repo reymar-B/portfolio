@@ -130,6 +130,10 @@ h1, h2, h3{
     left: 0px;
     background-color: rgba(0,0,0,0.6);
 }
+.about-me h3
+{
+    padding: 1.5rem 0;
+}
 /* Laptop view */
 @media screen and (min-width: 600px)
 {
@@ -189,7 +193,7 @@ h1, h2, h3{
     .about-me i
     {
         padding: 5px;
-        font-size: 1rem;
+        font-size: 2rem;
     }
    
 }
