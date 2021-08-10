@@ -43,6 +43,25 @@ function sendEmail()
         let name = $('#name').val();
         let email = $('#email').val();
         let message = $('#message').val();
+        let regx_name = /^([a-z\s])+$/i;
+        let regx_email = /^([a-z0-9_\-\.])+\@([a-z0-9_\-\.])+\.([a-z]{2,4})$/i;
+        let regx_space = /^([\s])+$/;
+        $('.frm-inputs').removeClass('err');
+        if(!regx_name.test(name) || name==="" || regx_space.test(name) || name.length > 100)
+        {
+            $('#name').addClass('err');
+            return false;
+        }
+        if(!regx_email.test(email) || email.length > 100)
+        {
+            $('#email').addClass('err');
+            return false;
+        }
+        if( message==="" || regx_space.test(message) || message.length > 300)
+        {
+            $('#message').addClass('err');
+            return false;
+        }
         $.ajax({
             method:'POST',
             url:'https://formsubmit.co/ajax/ramyer88@gmail.com',
@@ -57,6 +76,8 @@ function sendEmail()
                 alert('message sent');
             },
         })
-
+    })
+    $(document).on('click', '#reset', function(){
+        $('.frm-inputs').removeClass('err');
     })
 }
