@@ -74,11 +74,13 @@ function sendEmail()
             },
             success:function(){
                 alert('message sent');
+                $('form').trigger('reset');
             },
         })
-        $('form').trigger('reset');
+        return false;
     })
-    $(document).on('click', '#reset', function(){
+    $(document).on('click', '#clear', function(){
         $('.frm-inputs').removeClass('err');
+        $('form').trigger('reset');
     })
 }
