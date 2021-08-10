@@ -76,6 +76,7 @@ function sendEmail()
                 alert('message sent');
             },
         })
+        $('form').trigger('reset');
     })
     $(document).on('click', '#reset', function(){
         $('.frm-inputs').removeClass('err');
