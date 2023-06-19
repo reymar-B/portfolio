@@ -1,111 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>reymar bongolto</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css" >
-    <link rel="stylesheet" href="css/fontawesome.css" >
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="icon" type="image/png"  href="img/rb_logo_02.png">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <title>my portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu').on('click', function () {
+                var d = $('.nav-link').css('display')
+                d === 'none' ? $('.nav-link').css({display:'block'}) : 
+                $('.nav-link').css({display:'none'})
+            })
+        })
+    </script>
 </head>
-<body>
-<!-- Nav bar -->
-<div class="container">
-    <header class="nav">
-        <div class="top-nav" id="my-topnav">
-            <a href="#about" class="active"> About </a>
-            <a href="#my-portfolio"> Portfolio </a>
-            <a class="icon"> <i class="fas fa-bars"></i> </a>
-        </div>
-    </header>
-<!-- HOME PAGE -->
-<section id="about">
-    <div class="about-me">
-        <div class="greeting"><span> Hi <i class="far fa-smile-beam"style="color: rgb(194, 182, 14);"></i>&nbsp;</span> 
-            <h1>I'm Reymar </h1> </span>
-        </div>
-        <div class="intro">
-            <p>
-                A <strong> web developer </strong> living in Philippines. 
-                I create responsive and functional websites for small businesses.</p>
-        </div>
-        <div class="skills">
-            <h3> Knowledgeable in: </h3>
-            <i class="fab fa-html5" style="color: rgba(240, 75, 38, 0.898);" ></i>
-            <i class="fab fa-css3-alt" style="color: rgb(12, 126, 192);" ></i>
-            <i class="fab fa-js" style="color: rgb(194, 182, 14);" ></i>
-            <i class="fab fa-php" style="color: rgb(148, 69, 223);" ></i>
-            <i class="fab fa-laravel" style="color: rgb(240, 38, 38);" ></i>
-            <i class="fab fa-react" style="color: rgb(0, 150, 100);"></i>
-            <i class="fab fa-vuejs" aria-hidden="true" style="color: rgb(10, 194, 139);"></i>
-            <i class="fab fa-git-square" aria-hidden="true"  style="color: rgb(240, 38, 38);" > </i>
-            <i class="fa fa-database" aria-hidden="true" style="color: rgb(231, 223, 223);" > </i>
-            <i class="fab fa-bootstrap" aria-hidden="true" style="color: rgb(113, 47, 245);"></i>
-            <i class="fab fa-wordpress-simple" aria-hidden="true" style="color: rgb(117, 154, 255);"></i>
-        </div>
-        <div class="contact-links">
-            <h3> You can contact me </h3>
-            <a href="https://ph.linkedin.com/in/reymar-bongolto-012489189?trk" target="blank"> <i class="fab fa-linkedin" 
-                style="color:  rgb(47, 24, 253);"> </i> </a>
-            <a href="https://github.com/reymar-B" target="blank"> <i class="fab fa-github" style="color: rgb(248, 245, 245);"> </i> </a>
-        </div>
-        <i class="far fa-envelope" style=" color: rgb(248, 245, 245);font-size: 12px; ">&nbsp; ramyer88@gmail.com</i>
-        <br>
-        <a href="https://docs.google.com/document/d/1fQTfjPDkK8D_Nv_-oj3zcEh42-o8lBDEMwzkofgd878/edit?usp=sharing" target="blank">
-            <i class="fas fa-file-download"  style=" color: rgb(8, 227, 235);font-size: 18px; ">&nbsp; resume</i>
-        </a>
-    </div>
-</section>
-<!-- PORTFOLIO PAGE -->
-<section id="my-portfolio">
-    <div class="portf-container"> 
-        <div class="portf-head">
-            <h2> Portfolio </h2>
-            <p> These are my personal projects.</p>
-        </div> 
-        <div class="portf-cntnt">
-            <div class="img-bg">
-                <div class="image img01"> </div>
-                <div class="portf-desc">
-                    <p> Contact lists project with login system using session for authentication </p>
-                </div>
-                <div class="links">
-                    <a class="view-code"  target="_blank" href="https://github.com/reymar-B/contactlist-php-ajax-bootstrap"> View Code </a>
-                </div>
-            </div>
-            <div class="img-bg">
-                <div class="image img02"></div>
-                <div class="portf-desc">
-                    <p>jQuery Bootstrap form validation</p>
-                </div>
-                <div class="links">
-                    <a class="live-demo" target="_blank" href=" https://reymar-b.github.io/jquery-form-validation/ "> Live Demo </a>
-                    <a class="view-code" target="_blank" href=" https://github.com/reymar-B/jquery-form-validation "> View Code </a>
-                </div>
-            </div>
-            <div class="img-bg">
-                <div class="image img03"></div>
-                <div class="portf-desc">
-                    <p>landing page in css tailwind</p>
-                </div>
-                <div class="links">
-                    <a class="live-demo" target="_blank" href="https://reymar-b.github.io/css-tailwind/"> Live Demo </a>
-                    <a class="view-code" target="_blank" href="https://github.com/reymar-B/css-tailwind"> View Code </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<div class="ftr"> &#169; My portfolio 2021-2022</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
-crossorigin="anonymous"></script>
-<script src="styles/style.js"> </script>
-</body> 
+<body class="text-white">
+    <div class="bg-gradient-to-bl from-emerald-950 via-slate-900 to-emerald-900 text-sm h-screen overflow-y-auto">
+        <!-- nav bar -->
+        <div class="border-solid border-b-2 border-slate-700 fixed left-0 right-0 top-0 z-10
+            bg-gradient-to-bl from-emerald-950 via-slate-900 to-emerald-900">
+            <nav class="md:w-3/4 mx-auto p-4">
+                <a class="" href="https://github.com/reymar-B" target="blank"> <i
+                    class="fab fa-github text-slate-100 text-2xl hover:text-emerald-500"></i> </a>
+                <i id="menu" class="fas fa-ellipsis-v text-slate-100 md:hidden float-right pt-2"></i>
+                <span class="md:float-right">
+                    <a class="nav-link md:ml-6 hover:text-emerald-500 md:inline-block pt-2" href="#about">about</a>
+                    <a class="nav-link md:ml-6 hover:text-emerald-500 md:inline-block pt-2" href="#projects">projects</a>
+                </span>
+            </nav>
+        </div>
+        <div class="md:container md:mx-auto">
+            <!-- about me -->
+            <section id="about" class="flex justify-center mt-20">
+                <div class="mx-auto md:w-3/4">
+                    <div class="border-solid border border-slate-700 p-4 m-4 rounded-lg md:flex flex-row items-top">
+                        <div class="flex justify-center md:w-1/2 lg:w-1/3">
+                            <img class="h-40 w-40 m-4 rounded-full" src="assets/img/me.jpg" alt="profile image">
+                        </div>
+                        <div class="text-center md:text-justify md:w-full p-4">
+                            <p class="inline text-xl">
+                                <span class="text-amber-300 font-bold text-3xl italic">Hello</span>, welcome to my portfolio website! <strong class="text-blue-300">My name is Reymar</strong>, and I am a passionate and creative web developer. I specialize in crafting visually appealing and highly functional websites that provide exceptional user experiences.
+                                I believe that great web development is a combination of technical expertise and artistic flair. With a strong foundation in web development principles and a keen eye for design, I strive to create engaging and intuitive digital experiences that leave a lasting impression on users.</p>
+                        </div>
+                    </div>
+                    <div class="text-center my-12">
+                        <div class="border-solid border border-slate-700 p-4 m-4 rounded-lg">
+                            <h3 class="p-2 text-xl">Tech Stack</h3>
+                            <i
+                                class="fab fa-html5 text-red-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i
+                                class="fab fa-css3-alt text-blue-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i
+                                class="fab fa-js text-yellow-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i
+                                class="fab fa-php text-purple-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i
+                                class="fab fa-laravel text-red-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i
+                                class="fab fa-react text-teal-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <i class="fab fa-vuejs text-green-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"
+                                aria-hidden="true"></i>
+                            <i class="fab fa-git-square text-slate-900 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"
+                                aria-hidden="true"></i>
+                            <i class="fa fa-database text-slate-600 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"
+                                aria-hidden="true"></i>
+                            <i class="fab fa-bootstrap text-purple-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"
+                                aria-hidden="true"></i>
+                            <i class="fab fa-wordpress-simple text-purple-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"
+                                aria-hidden="true"></i>
+                            <i
+                                class="fab fa-node-js text-green-500 h-10 w-10 bg-gray-100 rounded-full m-2 leading-relaxed text-2xl"></i>
+                            <div
+                                class="contact-info my-12 p-2 drop-shadow-sm rounded-full border-solid border border-slate-700">
+                                <h3>You can contact me</h3>
+                                <a href="https://ph.linkedin.com/in/reymar-bongolto-012489189?trk" target="blank"> <i
+                                        class="fab fa-linkedin text-blue-600 text-xl mx-2"> </i> </a>
+                                <span class="mx-2"><i class="far fa-envelope"></i>&nbsp; ramyer88@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- projects -->
+            <section id="projects" class="py-6 border-solid border-y border-slate-700">
+                <h2 class="text-2xl text-center">Projects</h2>
+                <div class="md:grid grid-cols-3 gap-2 md:w-3/4 mx-auto my-8">
+                    <!-- Project 01 -->
+                    <div class="p-2 border-solid border border-slate-600 rounded">
+                        <img class="w-10/12 h-48 bg-cover bg-center mx-auto" src="assets/img/rbx.png" alt="rbx">
+                        <h5 class="text-xl py-2">RBX.Capital</h5>
+                        <p class="py-1 my-1">Landing page for a E-game company, this site is still in progress</p>
+                        <span class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">Svelte</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">
+                            <a href="https://rbx.capital/">website</a></span>
+                    </div>
+                    <!-- Project 02 -->
+                    <div class="p-2 border-solid border border-slate-600 rounded">
+                        <img class="w-10/12 h-48 bg-cover bg-center mx-auto" src="assets/img/pagination.png" alt="rbx">
+                        <h5 class="text-xl py-2">Pagination in React</h5>
+                        <p class="py-1 my-1">A simple react project that shows basic pagination</p>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">react</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">tailwindcss</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a href="https://github.com/reymar-B/pagination-react">source code</a></span>
+                    </div>
+                    <!-- Project 03 -->
+                    <div class="p-2 border-solid border border-slate-600 rounded">
+                        <img class="w-10/12 h-48 bg-cover bg-center mx-auto" src="assets/img/rest.png" alt="rbx">
+                        <h5 class="text-xl py-2">Simple todo api</h5>
+                        <p class="py-1 my-1">A simple todo api</p>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">node</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">express</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a href="https://github.com/reymar-B/todo-api">source code</a></span>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-6">
+                <a href="https://docs.google.com/document/d/1fQTfjPDkK8D_Nv_-oj3zcEh42-o8lBDEMwzkofgd878/edit?usp=sharing"
+                    target="blank">
+                    <i class="fas fa-file-download text-2xl">&nbsp; resume</i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
