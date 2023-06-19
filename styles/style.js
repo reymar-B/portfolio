@@ -30,7 +30,7 @@ function smoothScroll()
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             },
-            1200);
+            5000);
         }
     });
 }
