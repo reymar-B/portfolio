@@ -6,20 +6,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="ico" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/jquery.js"></script>
     <script>
+
         $(document).ready(function () {
+
             $('#menu').on('click', function () {
-                var d = $('.nav-link').css('display')
-                d === 'none' ? $('.nav-link').css({display:'block'}) : 
-                $('.nav-link').css({display:'none'})
+
+                var x = document.getElementById('nav-link')
+
+                x.className === '' ? x.className += 'dropdown' : x.className = ''
+
             })
+
         })
+
     </script>
 </head>
 
@@ -30,11 +36,11 @@
             bg-gradient-to-bl from-emerald-950 via-slate-900 to-emerald-900">
             <nav class="md:w-3/4 mx-auto p-4">
                 <a class="" href="https://github.com/reymar-B" target="blank"> <i
-                    class="fab fa-github text-slate-100 text-2xl hover:text-emerald-500"></i> </a>
+                        class="fab fa-github text-slate-100 text-2xl hover:text-emerald-500"></i> </a>
                 <i id="menu" class="fas fa-ellipsis-v text-slate-100 md:hidden float-right pt-2"></i>
-                <span class="md:float-right">
-                    <a class="nav-link md:ml-6 hover:text-emerald-500 md:inline-block pt-2" href="#about">about</a>
-                    <a class="nav-link md:ml-6 hover:text-emerald-500 md:inline-block pt-2" href="#projects">projects</a>
+                <span id="nav-link">
+                    <a class="md:ml-6 hover:text-emerald-500 pt-2" href="#about">about</a>
+                    <a class="md:ml-6 hover:text-emerald-500 pt-2" href="#projects">projects</a>
                 </span>
             </nav>
         </div>
@@ -42,14 +48,21 @@
             <!-- about me -->
             <section id="about" class="flex justify-center mt-20">
                 <div class="mx-auto md:w-3/4">
-                    <div class="border-solid border border-slate-700 p-4 m-4 rounded-lg md:flex flex-row items-top">
-                        <div class="flex justify-center md:w-1/2 lg:w-1/3">
+                    <div class="border-solid border border-slate-700 p-4 m-4 rounded-lg lg:flex flex-row items-top">
+                        <div class="flex justify-center lg:w-1/3">
                             <img class="h-40 w-40 m-4 rounded-full" src="assets/img/me.jpg" alt="profile image">
                         </div>
                         <div class="text-center md:text-justify md:w-full p-4">
                             <p class="inline text-xl">
-                                <span class="text-amber-300 font-bold text-3xl italic">Hello</span>, welcome to my portfolio website! <strong class="text-blue-300">My name is Reymar</strong>, and I am a passionate and creative web developer. I specialize in crafting visually appealing and highly functional websites that provide exceptional user experiences.
-                                I believe that great web development is a combination of technical expertise and artistic flair. With a strong foundation in web development principles and a keen eye for design, I strive to create engaging and intuitive digital experiences that leave a lasting impression on users.</p>
+                                <span class="text-amber-300 font-bold text-3xl italic">Hello</span>, welcome to my
+                                portfolio website! <strong class="text-blue-300">My name is Reymar</strong>, and I am a
+                                passionate and creative web developer. I specialize in crafting visually appealing and
+                                highly functional websites that provide exceptional user experiences.
+                                I believe that great web development is a combination of technical expertise and
+                                artistic flair. With a strong foundation in web development principles and a keen eye
+                                for design, I strive to create engaging and intuitive digital experiences that leave a
+                                lasting impression on users.
+                            </p>
                         </div>
                     </div>
                     <div class="text-center my-12">
@@ -99,7 +112,8 @@
                         <img class="w-10/12 h-48 bg-cover bg-center mx-auto" src="assets/img/rbx.png" alt="rbx">
                         <h5 class="text-xl py-2">RBX.Capital</h5>
                         <p class="py-1 my-1">Landing page for a E-game company, this site is still in progress</p>
-                        <span class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">Svelte</span>
+                        <span
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">Svelte</span>
                         <span
                             class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">
                             <a href="https://rbx.capital/" target="_blank">website</a></span>
@@ -114,7 +128,9 @@
                         <span
                             class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">tailwindcss</span>
                         <span
-                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a href="https://github.com/reymar-B/pagination-react" target="_blank">source code</a></span>
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a
+                                href="https://github.com/reymar-B/pagination-react" target="_blank">source
+                                code</a></span>
                     </div>
                     <!-- Project 03 -->
                     <div class="p-2 border-solid border border-slate-600 rounded">
@@ -126,7 +142,8 @@
                         <span
                             class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block">express</span>
                         <span
-                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a href="https://github.com/reymar-B/todo-api" target="_blank">source code</a></span>
+                            class="rounded-full border-solid border border-emerald-300 text-xs bg-slate-700 px-2 py-1 my-1 inline-block"><a
+                                href="https://github.com/reymar-B/todo-api" target="_blank">source code</a></span>
                     </div>
                 </div>
             </section>

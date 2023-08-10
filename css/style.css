@@ -7,7 +7,24 @@
     background-color: rgba(255, 255, 255, 0.034);
 }
 
-.nav-link {
-    display: none;
+#nav-link a{
+    display: none;  
+}
+
+@media only screen and (max-width: 767px) {
+
+    #nav-link.dropdown a{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     
+    #nav-link {
+        float: right;
+    }
+    
+    #nav-link a{
+        display: inline-block;
+    }
 }
